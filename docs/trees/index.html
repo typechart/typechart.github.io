@@ -1,0 +1,1275 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="ja">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[a-z0-9\-\s\.]+">
+      
+      <link rel="shortcut icon" href="../img/favicon.svg">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+    
+    
+      
+        <title>Simple Tree - TypeChart Guides</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="purple">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#simple-trees" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="TypeChart Guides" class="md-header-nav__button md-logo">
+          
+            <img src="../img/favicon.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              TypeChart Guides
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Simple Tree
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="/" class="md-tabs__link">
+          Home
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href=".." class="md-tabs__link">
+          Introduction
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../toc/" class="md-tabs__link md-tabs__link--active">
+          Tutorials
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../reference/" class="md-tabs__link">
+          Reference
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="TypeChart Guides" class="md-nav__button md-logo">
+      
+        <img src="../img/favicon.svg" width="48" height="48">
+      
+    </a>
+    TypeChart Guides
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Introduction
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Introduction
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cheat-sheet/" title="Selected Examples Sheet" class="md-nav__link">
+      Selected Examples Sheet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic/" title="Basic Concepts" class="md-nav__link">
+      Basic Concepts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Beginner
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Beginner
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../toc/" title="TOC" class="md-nav__link">
+      TOC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../text-1/" title="Text 1" class="md-nav__link">
+      Text 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../text-2/" title="Text 2" class="md-nav__link">
+      Text 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../text-3/" title="Text 3" class="md-nav__link">
+      Text 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nodes/" title="Simple Nodes" class="md-nav__link">
+      Simple Nodes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Simple Tree
+      </label>
+    
+    <a href="./" title="Simple Tree" class="md-nav__link md-nav__link--active">
+      Simple Tree
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#link-notations" class="md-nav__link">
+    Link Notations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-styles" class="md-nav__link">
+    Link Styles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chart-types" class="md-nav__link">
+    Chart Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tree" class="md-nav__link">
+    Tree
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variants" class="md-nav__link">
+    Variants
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#link-to-node-lists" class="md-nav__link">
+    Link to Node Lists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chain-of-links" class="md-nav__link">
+    Chain of Links
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    Exercises
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../simple-org-chart/" title="Simple Org Chart" class="md-nav__link">
+      Simple Org Chart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../decorating-org-chart/" title="Decorating Org Chart" class="md-nav__link">
+      Decorating Org Chart
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Attributes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Attributes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$bar/" title="$bar" class="md-nav__link">
+      $bar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$bg/" title="$bg" class="md-nav__link">
+      $bg
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$border/" title="$border" class="md-nav__link">
+      $border
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$color/" title="$color" class="md-nav__link">
+      $color
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$cp/" title="$cp" class="md-nav__link">
+      $cp
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$grid/" title="$grid" class="md-nav__link">
+      $grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$import/" title="$import" class="md-nav__link">
+      $import
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$is/" title="$is" class="md-nav__link">
+      $is
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$link/" title="$link" class="md-nav__link">
+      $link
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$k/" title="$k" class="md-nav__link">
+      $k
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$members/" title="$members" class="md-nav__link">
+      $members
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$n/" title="$n" class="md-nav__link">
+      $n
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$of/" title="$of" class="md-nav__link">
+      $of
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$pie/" title="$pie" class="md-nav__link">
+      $pie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$resize/" title="$resize" class="md-nav__link">
+      $resize
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$text/" title="$text" class="md-nav__link">
+      $text
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../$tree/" title="$tree" class="md-nav__link">
+      $tree
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Chart types
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Chart types
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../type-bar/" title="bar" class="md-nav__link">
+      bar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../type-pie/" title="pie" class="md-nav__link">
+      pie
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../colors/" title="Colors" class="md-nav__link">
+      Colors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connection-points/" title="Connection points" class="md-nav__link">
+      Connection points
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#link-notations" class="md-nav__link">
+    Link Notations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-styles" class="md-nav__link">
+    Link Styles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chart-types" class="md-nav__link">
+    Chart Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tree" class="md-nav__link">
+    Tree
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variants" class="md-nav__link">
+    Variants
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#link-to-node-lists" class="md-nav__link">
+    Link to Node Lists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chain-of-links" class="md-nav__link">
+    Chain of Links
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    Exercises
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="simple-trees">Simple Trees</h1>
+<blockquote>
+<p>3 min read</p>
+</blockquote>
+<p><strong>Objective</strong>: Able to understand and write the code:</p>
+<div class="admonition code">
+<p class="admonition-title">Code</p>
+<div class="highlight"><pre><span></span>A[Peter] --- 1[Mary]
+A --- 2[Sue]
+1 --- X
+1 === Y
+2 ... M
+2 ... N
+</pre></div>
+
+</div>
+<div class="admonition chart">
+<p class="admonition-title">Chart</p>
+<p><img src="../img/trees.png"></p>
+</div>
+<h2 id="link-notations">Link Notations</h2>
+<p>The following is an example of a link notation:</p>
+<div>
+  <div style="display:inline-block;vertical-align:top;background:#eee;width:300px;">
+  <div style="background:black;color:white;padding:4px;"> code </div>
+
+<div class="highlight"><pre><span></span>a[Mary] --&gt; b[Peter]
+</pre></div>
+
+<p></div>
+  <div style="display:inline-block;vertical-align:top">
+  <div style="background:black;color:white;padding:4px;"> chart </div>
+    <img src="../img/link-mary-peter.png" style="height:180px;">
+  </div>
+</div></p>
+<p>In this example:</p>
+<ul>
+<li><code>a[Mary]</code> is a node notation which begins the link. It is called the <code>fromNode</code> of a link.</li>
+<li><code>b[Peter]</code> is a node notation which ends the link. It is called the <code>toNode</code> of a link.  </li>
+<li><code>--&gt;</code> is the <code>link symbol</code> between the <code>fromNode</code> and <code>toNode</code>.</li>
+</ul>
+<p>If a <code>fromNode</code> or <code>toNode</code> is already defined in other <code>LOC</code> before the link notation. Use the label of <code>fromNode</code> or <code>toNode</code> in the link notation.</p>
+<p>The following code will draw the same chart as the above.
+<div class="highlight"><pre><span></span>a[Mary]
+b[Peter]
+a --&gt; b
+</pre></div></p>
+<h2 id="link-styles">Link Styles</h2>
+<p>We show you some of the link styles for your reference:</p>
+<p><img src="../img/example-links.png" style="height:180px;"></p>
+<table>
+<thead>
+<tr>
+<th>Link Notation</th>
+<th>Link Symbol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A --- 1</code></td>
+<td><code>---</code></td>
+<td>solid line</td>
+</tr>
+<tr>
+<td><code>B ---&gt;2</code></td>
+<td><code>---&gt;</code></td>
+<td>solid line with arrow forward</td>
+</tr>
+<tr>
+<td><code>C &lt;---3</code></td>
+<td><code>&lt;---</code></td>
+<td>solid line with arrow backward</td>
+</tr>
+<tr>
+<td><code>D ... 4</code></td>
+<td><code>...</code></td>
+<td>dotted line</td>
+</tr>
+<tr>
+<td><code>E ...&gt;5</code></td>
+<td><code>...&gt;</code></td>
+<td>dotted line with arrow forward</td>
+</tr>
+<tr>
+<td><code>F &lt;...6</code></td>
+<td><code>&lt;...</code></td>
+<td>dotted line with arrow backward</td>
+</tr>
+<tr>
+<td><code>G === 7</code></td>
+<td><code>===</code></td>
+<td>bold line</td>
+</tr>
+<tr>
+<td><code>H ===&gt;8</code></td>
+<td><code>===&gt;</code></td>
+<td>bold line with arrow forward</td>
+</tr>
+<tr>
+<td><code>I &lt;===9</code></td>
+<td><code>&lt;===</code></td>
+<td>bold line with arrow backward</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chart-types">Chart Types</h2>
+<p>There are several chart types in TypeChart. (e.g. <code>pie</code> chart, <code>bar</code> chart, etc. )</p>
+<p>TypeChart will draw and arrange nodes and links in different manner for different chart types.</p>
+<p><code>tree</code> type chart will draw the links from top to bottom in a hierarchy layout.</p>
+<p>The default chart type of TypeChart is <code>tree</code>.</p>
+<h2 id="tree">Tree</h2>
+<p>A tree is a list of links that can be chained from a root node.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span>A --- 1
+A --- 2
+1 --- X
+1 --- Y
+2 --- M
+2 --- N
+</pre></div>
+
+<p>In the above example, TypeChart will draw <code>A</code> as the root node at the top, then draw links to <code>1</code> and <code>2</code> as <code>A</code>'s children. Then draw links to <code>X</code> and <code>Y</code> as <code>1</code>'s children as so on. </p>
+<p><img src="../img/trees-2.png" style="height:180px;"></p>
+<h2 id="variants">Variants</h2>
+<h3 id="link-to-node-lists">Link to Node Lists</h3>
+<p>For a link notation where a <code>fromNode</code> to more than one <code>toNode</code>s, we may simply write it in one <code>LOC</code>, provided that all the links share the same link style.</p>
+<div class="highlight"><pre><span></span>1 --- X,Y
+</pre></div>
+
+<p>is the same as </p>
+<div class="highlight"><pre><span></span>1 --- X
+1 --- Y
+</pre></div>
+
+<h3 id="chain-of-links">Chain of Links</h3>
+<p>We can also write chain of links in one <code>LOC</code>:</p>
+<div class="highlight"><pre><span></span>A --- 1 --- X
+</pre></div>
+
+<p>is the same as</p>
+<div class="highlight"><pre><span></span>A --- 1
+1 --- X
+</pre></div>
+
+<h2 id="exercises">Exercises</h2>
+<ol>
+<li>Rewrite the following code in two <code>LOC</code> only.</li>
+</ol>
+<div class="highlight"><pre><span></span>A --- 1
+A --- 2
+1 --- X
+1 --- Y
+2 --- M
+2 --- N
+</pre></div>
+
+<details><summary>Reference Answer</summary><div class="highlight"><pre><span></span>A --- 1 --- X,Y
+A --- 2 --- M,N
+</pre></div>
+
+</details>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../nodes/" title="Simple Nodes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Simple Nodes
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../simple-org-chart/" title="Simple Org Chart" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Simple Org Chart
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; Simon CHAM
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.a8b5e56f.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.ja.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="./../w3.css">
+<link rel="stylesheet" href="./../index.css?1">
+</head>
+<body>
+<div class="w3-bar top-bar">
+  <div class="w3-bar-item">
+    <!-- logo -->
+    <a href="/" style="text-decoration: none;">
+      <div class="logo"> TC </div><span class="logo-text">TypeChart</span>
+    </a>
+    <!-- end logo -->
+  </div>
+  
+  <div class="w3-bar-item">
+    <div class="w3-padding">
+      <a class="1w3-padding" href="./">Examples</a>
+    </div>
+  </div>
+  <div class="w3-bar-item">
+    <div class="w3-padding">
+      <a class="1w3-padding" >Syntax</a>
+    </div>
+  </div>
+
+</div>
+  
+<div class="w3-padding w3-black">
+  <p class="w3-padding">
+  There are some examples of TypeChart.
+</p>
+</div>
+<div class="w3-padding">
+  <ul class="w3-ul">
+    <li>
+      <div class="w3-bar">
+        <div class="w3-bar-item">
+          <div class="w3-padding">By Chart Types</div>
+        </div>
+        <div class="w3-bar-item">
+          <a class="w3-btn w3-round w3-tiny w3-border" >bar</a>
+          <a class="w3-btn w3-round w3-tiny w3-border" >donut</a>
+          <a class="w3-btn w3-round w3-tiny w3-border" >ghost leg</a>
+          <a class="w3-btn w3-round w3-tiny w3-border" >pie</a>
+          <a class="w3-btn w3-round w3-tiny w3-border" >stacked bar</a>
+          <a class="w3-btn w3-round w3-tiny w3-border" >tree</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="w3-bar">
+        <div class="w3-bar-item">
+          <div class="w3-padding">By Chart Usages</div>
+        </div>
+        <div class="w3-bar-item">
+          <a class="w3-btn w3-round w3-tiny w3-border" >Org Chart</a>
+          <a class="w3-btn w3-round w3-tiny w3-border" >Word Segmentation</a>
+          <a class="w3-btn w3-round w3-tiny w3-border" >BOM</a>
+          <a class="w3-btn w3-round w3-tiny w3-border" >Classification Tree</a>
+          <a class="w3-btn w3-round w3-tiny w3-border" >Flow Diagram</a>
+          <a class="w3-btn w3-round w3-tiny w3-border" >Architecture Diagram</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <p>bar</p>
+      <ul class="w3-ul">
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l2">
+              <div class="w3-light-gray">
+                <img class="w3-image" src="./example-bar-students.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l2">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+              <pre>
+%%% type bar
+
+## No of Students per Class
+
+3A 35
+3B 35
+3C 34
+3D 36
+              </pre>
+            </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l2">
+              <div class="w3-light-gray">
+                <img class="w3-image" src="./example-bar-students-modified.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+                <pre>
+%%% type bar
+%%% $bar.scale:5
+%%% $grid.interval:5
+%%% $colors:darkgray
+
+3A 35
+3B 35
+3C 34
+3D 36
+
+y[$is:y-axis No. of students per class]
+                </pre>
+              </div>
+            </div>
+            <div class="w3-col s12 m12 l6">
+              <p class="w3-tag w3-round">You may decorate the chart by adding y-axis text and changing the bar color, scale, and grid lines.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>donut</p>
+      <ul class="w3-ul">
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l2">
+              <div class="w3-light-gray">
+                <img class="w3-image" src="./example-pie-expense.png">
+              </div>
+            </div>
+            <div class="w3-col s6 m6 l2">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+              <pre>
+%%% type pie
+%%% $pie.show:percent
+%%% $border:0
+
+#< Expense Summary 2020
+##  
+
+[maintenance//# $n:30]
+[Electricity//# $n:20]
+[Labour//# $n:30]
+[Rental//# $n:20]
+              </pre>
+            </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l2">
+              <div class="w3-light-gray">
+                <img class="w3-image" src="./example-pie-expense-highlight.png">
+              </div>
+            </div>
+            <div class="w3-col s6 m6 l4">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+                <pre>
+%%% type pie
+%%% $pie.show:percent
+%%% $border:0
+%%% $border.color:white
+
+#< Expense Summary 2020
+##  
+
+[maintenance//# $n:30  $bg:pink $border.color:pink $border:10]
+[Electricity//# $n:20]
+[Labour//# $n:30]
+[Rental//# $n:20]
+                </pre>
+              </div>
+            </div>
+            <div class="w3-col s12 m12 l6">
+              <p class="w3-tag w3-round">You may emphasize a sector by modifying the attributes.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>ghost leg</p>
+      <ul class="w3-ul">
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l2">
+              <div class="w3-light-gray">
+                <img class="w3-image" src="./example-ghostleg.png">
+              </div>
+            </div>
+            <div class="w3-col s6 m6 l4">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+              <pre>
+%%% type ghostleg
+
+a[# A]---1[# 3||Coins]
+b[# B]---2[# 2||Coins]
+c[# C]---3[# 1||Coins]
+d[# D]---4[# 0||Coins]
+              </pre>
+            </div>
+            </div>
+            <div class="w3-col s12 m12 l6">
+              <p class="w3-tag w3-round">Nodes and Ghost legs are randomly generated.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>pie</p>
+      <ul class="w3-ul">
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l2">
+              <div class="w3-light-gray">
+                <img class="w3-image" src="./example-pie-marketing-budget.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l6">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+              <pre>
+%%% type pie
+%%% $pie.show:percent
+%%% $pie.inner:0 
+%%% $border:0
+
+#< Marketing Budget 2020-2021
+##  
+
+[Public Relations//# $n:30]
+[Web Marketing//# $n:15]
+[Advertising//# $n:30]
+[Channel Marketing//#     $n:15]
+[Consumer Promotions//#         $n:10]
+              </pre>
+            </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>stacked bar</p>
+      <ul class="w3-ul">
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l3">
+              <div class="w3-light-gray">
+                <img class="w3-image" src="./example-bar-colors.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l2">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+              <pre>
+%%% type bar
+%%% $bar.scale:5
+## Favourite Color
+
+3A 8,7,5,9,6
+3B 10,7,8,10
+3C 5,12,5,5,7
+3D 7,7,7,7,8
+              </pre>
+            </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l3">
+              <div class="w3-light-gray">
+                <img class="w3-image" src="./example-bar-colors-legend.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+                <pre>
+%%% type bar
+%%% $bar.scale:5
+## Favourite Color
+
+3A 8,7,5,9,6
+3B 10,7,8,10
+3C 5,12,5,5,7
+3D 7,7,7,7,8
+
+[$is:legend Red]
+[$is:legend Blue]
+[$is:legend Green]
+[$is:legend Yellow]
+[$is:legend Pink]
+                </pre>
+              </div>
+            </div>
+            <div class="w3-col s12 m12 l5">
+              <p class="w3-tag w3-round">You may decorate the chart by adding legend.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>Org Chart</p>
+      <ul class="w3-ul">
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-white">
+                <img class="w3-image" src="./example-org-chart.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+              <pre>
+%%% $$dept {$bg:transparent}
+
+# Organizational chart sample $color:gray 
+
+1[https://www.w3schools.com/w3css/img_avatar2.png || ## **CEO**//Simon]
+2[https://www.w3schools.com/w3css/img_avatar3.png ||CFO//Peter]
+3[https://cdn4.iconfinder.com/data/icons/banking-and-finance/500/document-dollar-512.png || Finance $$dept]
+4[https://icon-library.com/images/it-icon/it-icon-7.jpg ||IT $$dept]
+5[https://www.pngkey.com/png/full/299-2992687_syrma-robust-supply-chain-icon-supply-chain-icon.png ||Supply Chain $$dept]
+
+1---2
+2---3,4,5
+
+3 --- a[**Alfred**//Manager $color:gray],b[Boris]
+4 --- c[Calvin],d[David],e[Emma]
+5 --- f[Fanny],g[Gary],v[Vacancy $bg:lightgrey]
+
+#   
+#### Made with ♥ TypeChat
+              </pre>
+            </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l6">
+              <div class="w3-light-gray">
+                <img class="w3-image" src="./example-org-chart-2.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+                <pre>
+%%% $$d {$bg:transparent $border:1}
+%%% $$m {$bg:#9ff0f0}
+%%% $tree-level:3
+
+# __Senior Management Offices__
+##  
+## __Version: 2019/10__
+#  
+
+ceo[# CEO||### **Mr. KC Li**//##### RM 301]
+cfo[# CFO||### **Yan Chan**//##### RM 303]
+coo[# COO||### **N. Ho**//##### RM 308]
+
+samson[## Samson C.//Sr Manager//RM 208 $$m]
+kitty[## Kitty S.//Manager//RM 205 $$m]
+yu[## Chan Y.//Manager//RM 203 $$m]
+ning[## Mr. Ning//Manager//RM 201 $$m]
+
+it(IT Dept $$d)
+pur(Purchase Dept $$d)
+pmc(PMC Dept $$d)
+acc(Accounting Dept $$d)
+store(Store Dept $$d)
+cust(Custom Dept $$d)
+cs(CS Dept $$d)
+
+ceo --- cfo,coo
+coo --- samson,kitty
+cfo --- yu,ning
+
+yu --- it
+kitty --- pur
+samson --- pmc,store,cs
+ning --- acc,cust
+
+##  
+####  Made with ♥ TypeChart
+                </pre>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>BOM</p>
+      <ul class="w3-ul">
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-white">
+                <img class="w3-image" src="./example-bom.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+              <pre>
+%%% $tree.level:5
+
+# BOM of Bicycle
+#  
+
+Bicycle --- Wheels,Frame
+Wheels --- Spokes,Tyre,Rim,Hub
+Frame --- Seat,Handle, [Main Frame]
+Tyre ... [Tyre Valve]
+[Tyre Valve] --- Bolt, Nut, Cap
+
+####  Made with ♥ TypeChart
+              </pre>
+            </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l6">
+              <div class="w3-light-gray">
+                <img class="w3-image" src="./example-bom-2.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+                <pre>
+%%% $tree.level:5
+%%% $bg:white $border:1 $cp.points:2
+%%% $$g {$title.at:right $border:0}
+# BOM of Bicycle with Item Number and Cost
+#  
+F0301(# F0301||## Bicycle//1 PCS)
+N0302(# N0302||## Wheels//2 PCS)
+N0402(# N0402||## Frame//1 PCS)
+S0900[# S0900||## Spokes//60 PCS]
+N0482[# N0482||## Tyre//2 PCS]
+R0473[# N0473||## Rim//2 PCS]
+N0461[# N0461||## Hub//1 PCS]
+
+F0301 === N0302,N0402
+N0302 === S0900,N0482,R0473,N0461
+
+g3[#                                                    ||#  || *Level 3 Material*//Cost: HK$ 80   $members:F0301 $$g $bg:lightblue]
+g2[#   ||#  || *Level 2 Material*//Cost: HK$ 60   $members:N0302,N0402 $$g $bg:pink]
+g1[#                           ||#  || *Level 1 Material*//Cost: HK$ 30    $members:S0900,N0461 $$g $bg:yellow]
+
+####  Made with ♥ TypeChart
+                </pre>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>Word Segmentation</p>
+      <ul class="w3-ul">
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-white">
+                <img class="w3-image" src="./example-word-segmentation.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+              <pre>
+下雨天留客天留我不留 --- 下雨天,留客天,留我,不留
+####  Made with ♥ TypeChart
+              </pre>
+            </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>Flow Diagram</p>
+      <ul class="w3-ul">
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l6">
+              <div class="w3-white">
+                <img class="w3-image" src="./example-flow.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+              <pre>
+%%% type grid
+%%% $bg:black $color:white $link.color:black $cp:e,w $resize:y
+%%% $$p {$color:yellow }
+%%% $$r {$cp:s,n}
+%%% $$e {$bg:blue $corner:30}
+%%% $$man {$bg:gray $border:1} 
+## SAP Flow chart for cycle counting process $color:black
+#  
+
+start(#     start$$e), a[Create Physical//Inventor//Documents//(MICS) $$p], b[Print cycle//count sheets//(MI21) $$p], c[Perform//physical//count of//stock $$man]
+d[Enter physical//counts//(MI04/MI24) $$p], x[Report//differences//(MI20) $$p],f<Recount//inventry?>,g[## Y||Post inventory//documents//(MI07/MI04) $$p],end(#      end$$e)
+[],i[Perform physical//count of //stock $$man],j[## N||Print//record//sheets//(MI11/MI04/MI24) $$p]
+
+start ---> a---> b--->c-->d[$cp:s,n]-->x-->f-->g-->end
+f-->j[$cp:s,n]--->i[$cp:w,e]-->x[$cp:n,s]
+
+#### Made with ♥ TypeChart $color:black
+              </pre>
+            </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>Architecture Diagram</p>
+      <ul class="w3-ul">
+        <li>
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l6">
+              <div class="w3-white">
+                <img class="w3-image" src="./example-archtecture.png">
+              </div>
+            </div>
+            <div class="w3-col s12 m6 l4">
+              <div class="w3-padding w3-tiny w3-border w3-border-white">
+              <pre>
+%%% type grid
+%%% $color:white $bg:transparent $border.color:transparent $cp.points:2
+%%% $$b {$color:black $bg:white} 
+%%% $$node {$corner:30 $border:35 $border.color:#909090 $bg:#909090}
+%%% $$x {$color:transparent}
+# Spark Architectute $$b
+#  
+#  
+#  
+[],[],[],x2[$$x],x3[$$x]
+[],x[$$x],[],4[## Task $bg:green],5[Cache $bg:gray]
+[],1[##   Spark//## Context $bg:#663366],2(####    Cluster//   Manager$bg:darkblue)
+[],y[$$x],[],yy[$$x]
+[],xx[$$x],[],7[## Task $bg:green],8[Cache $bg:gray]
+
+1===>2===>4[$cp.to:w],7[$cp.to:w]
+g[$members:1 Driver Program $$b $border.color:transparent]
+g2(### Master Node$members:x,1 $$node )
+g3[$members:4,5 $$b $border.color:transparent]
+g4[$members:x2,5 ### Worker Node $$node]
+g5[$members:7,8 $$b $border.color:transparent]
+g6[$members:yy,8 ### Worker Node $$node]
+
+####  Made with ♥ TypeChart $$b                
+              </pre>
+            </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+</div>
+
+</body>
+</html>
